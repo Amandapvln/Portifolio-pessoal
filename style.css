@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9d9f4;
+  font-family: "Roboto Serif", serif;
+}
+
+.particle {
+	position: absolute;
+ 	border-radius: 50%;
+}
+
+/*HOME*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 26px;
+  background: rgba(25, 3, 33, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+header a {
+  margin-right: 35px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+section#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  padding-left: 63px;
+  letter-spacing: 5px;
+  color: #190321;
+  font-size: 48px;
+}
+
+.highlight {
+  color: #f172e9;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h3 {
+  padding-left: 63px;
+  color: #ed4ce3;
+  font-size: 32px;
+}
+
+hr {
+  margin-left: 63px;
+  border-top: 3px dotted #190321;
+  width: 472px;
+}
+
+#home img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*PROFISSIONAL*/
+section#profissional {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.profissional {
+  padding: 77px 350px;
+}
+
+section.profissional h2 {
+  text-align: center;
+  padding-top: 67px;
+  padding-bottom: 53px;
+  font-size: 36px;
+}
+
+section.profissional h4 {
+  text-align: center;
+  font-size: 24px;
+  padding: 27px;
+}
+
+section.profissional .paragraph-container {
+  display: flex;
+  align-items: center;
+}
+
+section.profissional p {
+  text-align: right;
+  margin-right: 10px;
+  white-space: nowrap;
+  flex: 1;
+}
+
+section.profissional .percentage-line {
+  height: 9px;
+  background-color: #f172e9;
+  width: 0;
+}
+
+section.profissional .percentage-number {
+  color: #190321;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+/*EXPERIENCIAS*/
+section#experiencia {
+  background-image: url(img/Experiencias.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.experiencia {
+  padding: 77px 0 104px 0;
+  text-align: center;
+}
+.title-exp {
+  padding: 76px 0 53px 0;
+  font-size: 36px;
+  color: #190321;
+  text-align: center;
+  margin: 0 245px;
+}
+
+.bolinha {
+  display: inline-block;
+  background-color: #190321;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+#aling-right {
+  border-left: 1px solid #190321;
+  text-align: left;
+  margin: 0 245px 0 50%;
+  padding: 0 34px 16px 34px;
+}
+
+#aling-left {
+  border-right: 1px solid #190321;
+  text-align: justify;
+  margin: 0 50% 0 245px;
+  padding: 0 34px 16px 34px;
+}
+
+#aling-right .ano-exp {
+  color: #ed4ce3;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-bottom: 6px;
+}
+#aling-right .tipo-exp {
+  font-weight: bolder;
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+
+#aling-left .ano-exp {
+  text-align: right;
+  color: #ed4ce3;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-bottom: 6px;
+}
+#aling-left .tipo-exp {
+  text-align: right;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+#aling-left p {
+  text-align: right;
+}
+
+/*CONTATOS*/
+
+section#contato {
+  background-image: url(img/sailormoon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.contact {
+  text-align: center;
+  margin: 0 251px;
+  background: rgba(25, 3, 33, 0.3);
+}
+
+#contact-text {
+  padding: 39px;
+}
+#contact-text h5 {
+  font-size: 24px;
+  margin: 74px 0 34px 0;
+}
+#contact-text p {
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 101px;
+}
+
+/*MÍDIAS SOCIAIS*/
+
+#social-midia {
+  padding: 10px 0 35px 0;
+}
+
+#social-midia a {
+  text-decoration: none;
+  background-color: #f2a2ed;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 26px;
+  padding: 10px;
+  margin-left: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+#social-midia a:hover {
+  background-color: #190321;
+}
+
+/*RODAPE*/
+footer {
+  text-align: center;
+  padding: 25px;
+  background: rgba(25, 3, 33, 0.3);
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+/*RESPONSIVIDADE*/
+
+/* Estilos para dispositivos com largura máxima de 600 pixels */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+    margin: 100px 20px 0 20px;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin: 20px;
+  }
+
+  /* Resto dos estilos específicos para telas menores */
+}
+
+/* Estilos para dispositivos com largura máxima de 900 pixels */
+@media (max-width: 900px) {
+  /* Estilos para telas intermediárias */
+}
+
+/* Estilos para dispositivos com largura mínima de 901 pixels */
+@media (min-width: 901px) {
+  /* Estilos para telas maiores */
+}
